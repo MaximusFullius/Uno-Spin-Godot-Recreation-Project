@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://bh4ltjaamkdur"]
+
+[ext_resource type="Texture2D" uid="uid://6nwt7ybrrar4" path="res://Textures/card_back.png" id="1_kikvd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uu6xs"]
+size = Vector2(332.5, 513)
+
+[node name="Card" type="Node2D"]
+
+[node name="CardImage" type="Sprite2D" parent="."]
+position = Vector2(507, 341)
+texture = ExtResource("1_kikvd")
+
+[node name="CardArea" type="Area2D" parent="."]
+position = Vector2(507, 341)
+
+[node name="CardCollisionShape" type="CollisionShape2D" parent="CardArea"]
+visible = false
+position = Vector2(-0.75, -0.5)
+shape = SubResource("RectangleShape2D_uu6xs")

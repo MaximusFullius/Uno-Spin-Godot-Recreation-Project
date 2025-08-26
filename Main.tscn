@@ -1,19 +1,15 @@
 [gd_scene load_steps=3 format=3 uid="uid://c3n85gy2udybj"]
 
-[ext_resource type="Texture2D" uid="uid://6nwt7ybrrar4" path="res://Textures/card_back.png" id="1_glv2v"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_uu6xs"]
-size = Vector2(332.5, 513)
+[ext_resource type="Script" uid="uid://dvtlus7y83e5v" path="res://CardManager.cs" id="1_uu6xs"]
+[ext_resource type="PackedScene" uid="uid://bh4ltjaamkdur" path="res://card.tscn" id="2_r0du0"]
 
 [node name="Main" type="Node2D"]
 
-[node name="Card" type="Node2D" parent="."]
+[node name="CardManager" type="Node2D" parent="."]
+script = ExtResource("1_uu6xs")
 
-[node name="Sprite2D" type="Sprite2D" parent="Card"]
-texture = ExtResource("1_glv2v")
+[node name="Card" parent="CardManager" instance=ExtResource("2_r0du0")]
+position = Vector2(337, 33)
 
-[node name="Area2D" type="Area2D" parent="Card/Sprite2D"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Card/Sprite2D/Area2D"]
-position = Vector2(-0.75, -0.5)
-shape = SubResource("RectangleShape2D_uu6xs")
+[node name="Card2" parent="CardManager" instance=ExtResource("2_r0du0")]
+position = Vector2(-326, 10)

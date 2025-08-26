@@ -1,0 +1,19 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnoSpin2", "UnoSpin2.csproj", "{DCFA4AE5-39BC-4BED-ACD9-AEA802C5832C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCFA4AE5-39BC-4BED-ACD9-AEA802C5832C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCFA4AE5-39BC-4BED-ACD9-AEA802C5832C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCFA4AE5-39BC-4BED-ACD9-AEA802C5832C}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{DCFA4AE5-39BC-4BED-ACD9-AEA802C5832C}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{DCFA4AE5-39BC-4BED-ACD9-AEA802C5832C}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{DCFA4AE5-39BC-4BED-ACD9-AEA802C5832C}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal
